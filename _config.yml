@@ -1,0 +1,23 @@
+# Dependencies
+markdown:        redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+# relative_permalinks: true
+
+# Setup
+title:            BaishanCloud
+tagline:          ''
+description:      ''
+url:              http://www.baishan.com
+baseurl:          ''
+
+author:
+  name:           'BaishanCloud'
+  url:            https://www.baishan.com
+
+
+# Custom vars
+version:          1.0.0
+

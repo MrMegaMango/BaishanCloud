@@ -1,0 +1,588 @@
+---
+layout: default
+title: 白山-专注于数据服务的云计算服务提供商
+---
+
+{% include navbar.html %}
+
+<div id="carousel-banner" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-banner" data-slide-to="1"></li>
+    <li data-target="#carousel-banner" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active index-banner" id="index-banner-1">
+      <img
+        class="banner-img"
+        src="{{ site.baseurl }}/public/image/index/banner-1.png"
+      />
+      <div class="carousel-caption banner-1">
+        <div class="banner-1-title hidden-xs">
+          专注于数据服务的云计算服务提供商
+        </div>
+        <div class="banner-1-title visible-xs">专注于数据服务的</div>
+        <div class="banner-1-title visible-xs">云计算服务提供商</div>
+        <div class="banner-1-info">用技术的力量突破你的渴望</div>
+      </div>
+    </div>
+    <div class="item index-banner" id="index-banner-2">
+      <img
+        class="banner-img"
+        src="{{ site.baseurl }}/public/image/index/banner-2.png"
+      />
+      <div class="carousel-caption banner-2">
+        <div class="banner-2-title">服务数据全生命周期</div>
+        <div class="banner-2-info">传输、存储、治理、安全</div>
+      </div>
+    </div>
+    <div class="item index-banner" id="index-banner-3">
+      <img
+        class="banner-img hidden-xs"
+        src="{{ site.baseurl }}/public/image/index/banner-3.png"
+      />
+      <img
+        class="banner-img visible-xs"
+        src="{{ site.baseurl }}/public/image/index/banner-3-small.png"
+      />
+      <div class="carousel-caption banner-3">
+        <div class="banner-3-info">赋能老系统</div>
+        <div class="banner-3-info">创新新应用</div>
+        <a href="{{ site.baseurl }}/tech/orchsym" class="banner-3-more more"
+          >了解更多</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<div class="index-products-list clearfix bsc-container">
+  <h3>创新型云计算服务平台</h3>
+  <h4 class="hidden-xs">
+    提升用户体验、增强安全能力、提高运营效率、赋能业务创新
+  </h4>
+  <h4 class="visible-xs">提升用户体验、增强安全能力</h4>
+  <h4 class="visible-xs">提高运营效率、赋能业务创新</h4>
+  <div>
+    {% assign products=site.data.index-product %} {% for product in products %}
+    <a
+      href="{{ site.baseurl }}/tech/{{ product.url }}"
+      class="index-product-outwrap"
+    >
+      <div class="index-product-wrap">
+        <img
+          class="normal"
+          src="{{ site.baseurl }}/public/image/index/{{ product.img }}"
+          alt=""
+        />
+        <img
+          class="hover"
+          src="{{ site.baseurl }}/public/image/index/{{ product.imghover }}"
+          alt=""
+        />
+        <p class="title">{{ product.title }}</p>
+        <p class="info hidden-xs">{{ product.info1 }}</p>
+        <p class="info hidden-xs">{{ product.info2 }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+<div class="carousel-solution hidden-xs">
+  <div
+    id="carousel-solution"
+    class="bsc-container carousel slide"
+    data-ride=""
+    data-slide=""
+  >
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="col-xs-6 col-md-3 index-solution index-solution-dzsw">
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-dianzishnagwu.svg"
+            alt="..."
+          />
+          <div class="title">电子商务解决方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              帮助电商企业在市场竞争中脱颖而出，白山为多种规模的电商企业提供稳定、灵活、安全的解决方案，有效支持电商企业多场景业务应用，促进消费者体验升级，助力新时代电商企业全面提升品牌影响力。
+            </p>
+            <a
+              class="more"
+              href="{{ site.baseurl }}{% link solution/e-commerce.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-3 index-solution index-solution-zfmt">
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-chuanmei.svg"
+            alt="..."
+          />
+          <div class="title">传媒行业解决方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              依托白山创新技术带来的积累优势，白山政府媒体客户解决方案基于丰富的全球化资源以及与政府媒体行业的多年深度合作，聚焦政府媒体多种业务场景提供综合的互联网+时代传媒行业解决方案
+            </p>
+            <a
+              class="more"
+              href="{{ site.baseurl }}{% link solution/government-media.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-3 index-solution index-solution-hlwjr">
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-hlwjr.svg"
+            alt="..."
+          />
+          <div class="title">互联网金融解决方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              提升金融行业用户访问体验，满足多种方式为其用户创造便利、增强其用户粘性的需求，白山制定了一套以服务互联网金融客户为核心的行业解决方案，使行业有能力适应新一代用户的需求。
+            </p>
+            <a
+              class="more"
+              href="{{ site.baseurl }}{% link solution/itfin.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-3 index-solution index-solution-jyhy">
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-jiaoyu.svg"
+            alt="..."
+          />
+          <div class="title">在线教育解决方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              随着教育行业数字化、智能化转型，教育行业在教育模式、教育环境和教学思维上都有了新的需求。白山为教师、学员和教育机构提供高质量、可弹性伸缩的在线技术服务平台，包括直播、点播、对象存储、连麦SDK、安全等相关产品服务。
+            </p>
+            <a
+              class="more"
+              href="{{ site.baseurl }}{% link solution/online-education.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="item index-solutions">
+        <div class="col-xs-6 col-md-3 index-solution index-solution-yxhy">
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-youxi.svg"
+            alt="..."
+          />
+          <div class="title">游戏行业解决方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              为提升游戏用户访问体验、满足多媒体社交高质量的需求，白山以用户与游戏的交互为出发点，为游戏厂商制定行业解决方案，使游戏行业适应新一代用户的需求。
+            </p>
+            <a
+              class="more"
+              href="{{ site.baseurl }}{% link solution/game-safety.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-3 index-solution index-solution-kjds">
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-kuajing.svg"
+            alt="..."
+          />
+          <div class="title">跨境电商解决方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              中国跨境电商企业加速海外扩展，在海外树立品牌，通过产品创新、营销、服务和广告等等增加获客流量，增强其用户粘性和复购率，均需要确保用户在访问各种线上流程中享有优质体验，白山为中国跨境电商企业制定了一站式解决方案，使中国跨境电商企业着力于自身业务，助力中国跨境电商企业在海外更具有竞争力
+            </p>
+            <a
+              class="more"
+              href="{{ site.baseurl }}{% link solution/cross-border.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-3 index-solution index-solution-zfaq">
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-zhengfuanquan.svg"
+            alt="..."
+          />
+          <div class="title">政府安全态势感知方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              基于人工智能技术和大数据分析的安全态势感知系统，使政府在数字化转型期间能够确保自身网络环境安全，并帮助政府建立全局、统一的安全防护和运维体系。
+            </p>
+            <a
+              class="more"
+              href="{{
+                site.baseurl
+              }}{% link solution/government-security.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-3 index-solution index-solution-yhaq">
+          <img
+            class="bg"
+            src="{{ site.baseurl }}/public/image/index/solution-yhaq.png"
+            alt=""
+          />
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-yinhang.svg"
+            alt="..."
+          />
+          <div class="title">银行安全态势感知方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              利用结合机器学习和特征工程的行为分析和安全事件管理系统，帮助银行降低数据泄露、银行业务系统受攻击和威胁风险、有效应对安全问题排查缓慢和信息资产管理等问题。
+            </p>
+            <a
+              class="more"
+              href="{{ site.baseurl }}{% link solution/bank-security.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="item index-solutions">
+        <div class="col-xs-6 col-md-3 index-solution index-solution-cbsaq">
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-chubanshe.svg"
+            alt="..."
+          />
+          <div class="title">出版行业安全态势感知方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              白山安全态势感知服务一站式解决新闻出版行业线上资产安全和资产管理效率等安全转型中亟待解决的难题。
+            </p>
+            <a
+              class="more"
+              href="{{ site.baseurl }}{% link solution/press-security.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-3 index-solution index-solution-dzsw">
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-dianzishnagwu.svg"
+            alt="..."
+          />
+          <div class="title">电子商务解决方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              帮助电商企业在市场竞争中脱颖而出，白山为多种规模的电商企业提供稳定、灵活、安全的解决方案，有效支持电商企业多场景业务应用，促进消费者体验升级，助力新时代电商企业全面提升品牌影响力。
+            </p>
+            <a
+              class="more"
+              href="{{ site.baseurl }}{% link solution/e-commerce.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-3 index-solution index-solution-zfmt">
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-chuanmei.svg"
+            alt="..."
+          />
+          <div class="title">传媒行业解决方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              依托白山创新技术带来的积累优势，白山政府媒体客户解决方案基于丰富的全球化资源以及与政府媒体行业的多年深度合作，聚焦政府媒体多种业务场景提供综合的互联网+时代传媒行业解决方案
+            </p>
+            <a
+              class="more"
+              href="{{ site.baseurl }}{% link solution/government-media.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-3 index-solution index-solution-hlwjr">
+          <div class="bg-hover"></div>
+          <img
+            class="logo"
+            src="{{
+              site.baseurl
+            }}/public/image/index/solution-corporate-hlwjr.svg"
+            alt="..."
+          />
+          <div class="title">互联网金融解决方案</div>
+          <div class="hover-wrap">
+            <p class="info">
+              提升金融行业用户访问体验，满足多种方式为其用户创造便利、增强其用户粘性的需求，白山制定了一套以服务互联网金融客户为核心的行业解决方案，使行业有能力适应新一代用户的需求。
+            </p>
+            <a
+              class="more"
+              href="{{ site.baseurl }}{% link solution/itfin.html %}"
+              >了解更多</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      class="left solutions-carousel-control"
+      href="#carousel-solution"
+      role="button"
+      data-slide="prev"
+    >
+      <span
+        class="glyphicon solutions-glyphicon glyphicon-menu-left"
+        aria-hidden="true"
+      ></span>
+    </a>
+    <a
+      class="right solutions-carousel-control"
+      href="#carousel-solution"
+      role="button"
+      data-slide="next"
+    >
+      <span
+        class="glyphicon solutions-glyphicon glyphicon-menu-right"
+        aria-hidden="true"
+      ></span>
+    </a>
+  </div>
+</div>
+<div class="carousel-solution visible-xs">
+  <div id="carousel-solution-xs" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carousel-solution-xs"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li data-target="#carousel-solution-xs" data-slide-to="1"></li>
+      <li data-target="#carousel-solution-xs" data-slide-to="2"></li>
+      <li data-target="#carousel-solution-xs" data-slide-to="3"></li>
+      <li data-target="#carousel-solution-xs" data-slide-to="4"></li>
+      <li data-target="#carousel-solution-xs" data-slide-to="5"></li>
+      <li data-target="#carousel-solution-xs" data-slide-to="6"></li>
+      <li data-target="#carousel-solution-xs" data-slide-to="7"></li>
+      <li data-target="#carousel-solution-xs" data-slide-to="8"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      {% assign solutions=site.data.index-solution %} {% for solution in
+      solutions %}
+      <div
+        class="item index-solution {{ solution.class }}"
+        id="index-solution-xs-1"
+      >
+        <img
+          class="logo"
+          src="{{ site.baseurl }}/public/image/index/{{ solution.img }}"
+          alt="..."
+        />
+        <div class="title">{{ solution.title }}</div>
+        <div class="hover-wrap">
+          <p class="info">{{ solution.info }}</p>
+          <a class="more" href="{{ site.baseurl }}/solution/{{ solution.url }}"
+            >了解更多</a
+          >
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <a href="{{ site.baseurl }}/solution" class="more-solution">更多解决方案</a>
+</div>
+<div class="index-news bsc-container hidden-xs">
+  <h3>新闻动态</h3>
+  <p class="info" style="display: none;">
+    自成立以来，白山获得国内外媒体广泛关注。
+  </p>
+  <div class="news-wrap">
+    <a
+      class="news-main"
+      href="http://finance.ifeng.com/a/20181121/16582297_0.shtml"
+    >
+      <div class="news-main-bg"></div>
+      <div class="news-main-info-wrap">
+        <h3 class="title">白山云科技入选德勤“2018中国高科技高成长50强”</h3>
+        <p class="info">
+          白山凭借强大创新力与高成长性，成为该榜单的云计算和大数据代表企业。
+        </p>
+        <button class="more more-colorful-hover">了解更多</button>
+      </div>
+    </a>
+    <div class="news-others">
+      <div class="news-top">
+        <a
+          href="https://tech.ifeng.com/c/7qEv2MUM0Ct"
+          class="news-top-left news-others-wrap"
+        >
+          <div class="news-others-title">
+            IDC：CDN市场快速增长，白山云表现良好位列前五
+          </div>
+          <div class="news-others-info">
+            日前，国际权威调研机构IDC发布《中国内容分发网络服务市场份额，2018》（下称“报告”）。报告指出，2018年中国CDN市场规模达25.2亿美元，同比增长31.6%，依然处于快速发展期
+          </div>
+          <span class="news-others-more">查看详情</span>
+        </a>
+        <a
+          href="http://tech.ifeng.com/c/7pkEet2LuuM"
+          class="news-top-right news-others-wrap"
+        >
+          <div class="news-others-title">
+            入围2019“央采”名录，白山数聚蜂巢再获信赖
+          </div>
+          <div class="news-others-info">
+            日前，“中央国家机关2019年软件协议供货采购项目”（下称“央采”）中标公告正式发布。白山科技（下称“白山”）旗下“数聚蜂巢”产品经过严格的审核、测评，成功入围12包“中间件企业服务总线ESB”、13包“中间件数据集成工具”
+          </div>
+          <span class="news-others-more">查看详情</span>
+        </a>
+      </div>
+      <div class="news-bottom">
+        <a
+          href="http://biz.ifeng.com/a/20190613/45604131_0.shtml"
+          class="news-bottom-left news-others-wrap"
+        >
+          <div class="news-others-title">
+            白山“数聚蜂巢”迭代，加持企业API管理能力
+          </div>
+          <div class="news-others-info">
+            到2021年，在业务需求的驱动下，70%的CIO将通过API(应用程序编程接口)和体系架构为企业打造敏捷链接，这些API和体系架构将云供应商、系统开发人员、初创企业和其他公司的数字解决方案聚合起来。
+          </div>
+          <span class="news-others-more">查看详情</span>
+        </a>
+        <a
+          href="http://news.163.com/19/1010/15/ER4T8PMO000189DG.html"
+          class="news-bottom-center news-others-wrap"
+        >
+          <div class="news-others-title">
+            5人团队如何撑起新东方信息安全大任?
+          </div>
+          <div class="news-others-info">
+            教育培训行业，信息安全曾经并未受到足够的重视。但是，这两年发生了变化。古有孟母三迁，如今从学前教育的热火朝天，到职场人士的终身学习，源源不断的需求，刺激着教育行业的市场潜力和进化动力
+          </div>
+          <span class="news-others-more">查看详情</span>
+        </a>
+        <a
+          href="https://mp.weixin.qq.com/s?__biz=MzI5NDA0MDUxNA==&mid=2651473994&idx=1&sn=b64d803a33d06f7ebb4963ffd45bb40d&chksm=f7960ee7c0e187f16cc2a4d7833ec123c0af5b0d6dcaf12f82456145bbebd488ae3ad47b2430&scene=38#wechat_redirect"
+          class="news-bottom-right news-others-wrap"
+        >
+          <div class="news-others-title">
+            霍涛两会建言：高质量发展、大数据融合、API经济等话题
+          </div>
+          <div class="news-others-info">
+            白山CEO霍涛在两会期间，就高质量发展、大数据融合、API经济等话题，分享了自己的观察、思考与实践。
+          </div>
+          <span class="news-others-more">查看详情</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="index-news bsc-container visible-xs">
+  <h3>新闻动态</h3>
+  <a
+    class="news-main"
+    href="http://finance.ifeng.com/a/20181121/16582297_0.shtml"
+  >
+    <div class="news-main-bg"></div>
+    <div class="news-main-info-wrap">
+      <h3 class="title">白山云科技入选德勤“2018中国高科技高成长50强”</h3>
+      <p class="info">
+        白山凭借强大创新力与高成长性，成为该榜单的云计算和大数据代表企业。
+      </p>
+    </div>
+  </a>
+  {% assign news=site.data.index-news %} {% for n in news %}
+  <a href="{{ n.href }}" class="news-list news-main">
+    <h3 class="title">{{ n.title }}</h3>
+    <p class="info">{{ n.info }}</p>
+  </a>
+  {% endfor %}
+</div>
+<div class="index-news-more">
+  <a href="{{ site.baseurl }}/news">更多资讯</a>
+</div>
+<div class="customers">
+  <div class="bsc-container clearfix">
+    <h2 class="customers-title">典型客户</h2>
+    {% assign cus=site.data.customers %} {% for cu in cus %}
+    <div class="col-xs-6 col-sm-3 col-md-2 customers-box-outside">
+      <div class="customers-box">
+        <img
+          src="{{ site.baseurl }}/public/image/index/{{ cu.fileName }}"
+          alt=""
+          class="img-center"
+        />
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="index-register">
+  {% include learn-more.html %}
+</div>
+<div class="certify">
+  <div class="bsc-container clearfix">
+    <div class="col-xs-6 col-sm-4 col-md-2 certify-item">
+      <img src="{{ site.baseurl }}/public/image/index/qualify-1.png" />
+      <p>可信云服务认证</p>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-2 certify-item">
+      <img src="{{ site.baseurl }}/public/image/index/qualify-2.png" />
+      <p>CDN经营许可证</p>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-2 certify-item">
+      <img src="{{ site.baseurl }}/public/image/index/qualify-3.png" />
+      <p>公安部信息系统安全等级保护</p>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-2 certify-item">
+      <img src="{{ site.baseurl }}/public/image/index/qualify-4.png" />
+      <p>质量管理体系认证 ISO9001</p>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-2 certify-item">
+      <img src="{{ site.baseurl }}/public/image/index/qualify-5.png" />
+      <p>信息安全管理体系认证 ISO27001</p>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-2 certify-item">
+      <img src="{{ site.baseurl }}/public/image/index/qualify-6.png" />
+      <p>信息技术服务管理体系认证 ISO20000</p>
+    </div>
+  </div>
+</div>
+<div class="clean"></div>
